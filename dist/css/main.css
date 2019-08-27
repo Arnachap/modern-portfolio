@@ -1,0 +1,198 @@
+#page-header {
+  height: 300px;
+  width: 100%;
+  background-image: url("../assets/img/header.jpg");
+  background-position: top center;
+  background-size: cover;
+  position: relative; }
+  #page-header::before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.3); }
+
+#main-raised {
+  display: block;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  margin: -60px 30px 0px;
+  border-radius: 6px;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+  #main-raised .container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+    #main-raised .container .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+      margin-right: -15px;
+      margin-left: -15px;
+      text-align: center; }
+
+.profile {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px; }
+  .profile .avatar img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transform: translate3d(0, -50%, 0); }
+  .profile .name {
+    margin-top: -80px; }
+    .profile .name a {
+      display: inline-block;
+      vertical-align: middle;
+      color: #999;
+      font-size: 24px;
+      height: 41px;
+      line-height: 41px;
+      width: 41px;
+      overflow: hidden;
+      position: relative;
+      margin: 0.3rem 1px;
+      font-weight: 400; }
+      .profile .name a:hover {
+        color: #9c27b0;
+        transition: all 1s ease; }
+  .profile p {
+    text-align: justify !important; }
+
+.skills .skill {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%; }
+  .skills .skill i {
+    color: #9c27b0;
+    font-size: 3.8rem; }
+  .skills .skill h4 {
+    color: #3C4858;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    font-family: "Roboto Slab", "Times New Roman", serif; }
+
+.technologies .technology {
+  flex: 0 0 20%;
+  max-width: 20%;
+  padding: 0 15px; }
+  .technologies .technology .card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word; }
+    .technologies .technology .card .card-header {
+      margin: -40px 20px 20px;
+      padding: 20px 0;
+      border-radius: 3px;
+      color: #fff; }
+      .technologies .technology .card .card-header.ellipsis {
+        background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(123, 31, 162, 0.5); }
+      .technologies .technology .card .card-header.js {
+        background: linear-gradient(60deg, #fdd83c, #d4b830);
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(247, 223, 30, 0.5); }
+      .technologies .technology .card .card-header.php {
+        background: linear-gradient(60deg, #787cb4, #484c89);
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(72, 76, 137, 0.5); }
+      .technologies .technology .card .card-header.css {
+        background: linear-gradient(60deg, #2465f1, #214ce5);
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(33, 76, 229, 0.5); }
+      .technologies .technology .card .card-header.html {
+        background: linear-gradient(60deg, #f16524, #e54c21);
+        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(229, 76, 33, 0.5); }
+      .technologies .technology .card .card-header i {
+        font-size: 3rem; }
+      .technologies .technology .card .card-header h4 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+        line-height: 1.5em;
+        font-family: "Roboto Slab", "Times New Roman", serif; }
+    .technologies .technology .card i {
+      font-size: 2rem;
+      margin-bottom: 12px; }
+      .technologies .technology .card i.fa-sass {
+        color: #cf649a; }
+      .technologies .technology .card i.fa-bootstrap {
+        color: #563d7c; }
+      .technologies .technology .card i.fa-laravel {
+        color: #ff2d20; }
+      .technologies .technology .card i.fa-wordpress-simple {
+        color: #028cb0; }
+      .technologies .technology .card i.fa-node-js {
+        color: #689f63; }
+      .technologies .technology .card i.fa-npm {
+        color: #fb3e44; }
+      .technologies .technology .card i.fa-react {
+        color: #61dafb; }
+      .technologies .technology .card i.fa-github {
+        color: #24292e; }
+      .technologies .technology .card i.fa-windows {
+        color: #0060AA; }
+      .technologies .technology .card i.fa-linux {
+        color: #000000; }
+    .technologies .technology .card p {
+      font-size: 1rem;
+      margin-bottom: 12px; }
+      .technologies .technology .card p.webpack {
+        color: #1c78c0; }
+      .technologies .technology .card p.mysql {
+        color: #f29221; }
+      .technologies .technology .card p.mongodb {
+        color: #13aa52; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #eee;
+  color: #999;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  font-weight: 300; }
+  body p {
+    font-size: 14px;
+    margin-bottom: 10px; }
+  body h3 {
+    font-size: 36px; }
+  body h6 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 10px 0; }
+  body div {
+    display: block; }
+  body .title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+    color: #3C4858;
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    text-align: center; }

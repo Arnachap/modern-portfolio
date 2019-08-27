@@ -1,0 +1,8 @@
+$light-grey: #eee;
+$grey: #999;
+$dark-grey: #3C4858;
+$primary-color: #9c27b0;
+
+@mixin ease {
+    transition: all 1s ease;
+}
