@@ -71,7 +71,7 @@
       font-weight: 400; }
       .profile .name a:hover {
         color: #9c27b0;
-        transition: all 1s ease; }
+        transition: all .5s ease; }
   .profile p {
     text-align: justify !important; }
 
@@ -164,6 +164,82 @@
         color: #f29221; }
       .technologies .technology .card p.mongodb {
         color: #13aa52; }
+
+.portfolio {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px; }
+  .portfolio .project {
+    width: 50%;
+    padding: 15px 0; }
+    .portfolio .project .card {
+      border-radius: 8px;
+      position: relative; }
+      .portfolio .project .card .thumbnail {
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        max-width: 500px;
+        width: 100%;
+        background: #9c27b0;
+        background: linear-gradient(90deg, #9c27b0 0%, #ff2759 100%, #ff2759 100%);
+        box-shadow: 0 25px 20px -21px rgba(0, 0, 0, 0.57);
+        border-radius: 8px 8px; }
+        .portfolio .project .card .thumbnail:hover img {
+          filter: alpha(opacity=50);
+          opacity: .5; }
+        .portfolio .project .card .thumbnail:hover .links a {
+          opacity: 1;
+          transform: translateX(0); }
+          .portfolio .project .card .thumbnail:hover .links a:nth-child(2) {
+            transition-delay: .1s; }
+        .portfolio .project .card .thumbnail img {
+          max-width: 100%;
+          backface-visibility: hidden;
+          vertical-align: top;
+          border-radius: 8px 8px;
+          width: 100%;
+          height: auto;
+          margin-right: auto;
+          margin-left: auto;
+          transition: all .5s ease; }
+        .portfolio .project .card .thumbnail .links {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .portfolio .project .card .thumbnail .links a {
+            margin: 10px;
+            opacity: 0;
+            transform: translateY(-50%);
+            text-decoration: none;
+            transition: all .5s ease; }
+            .portfolio .project .card .thumbnail .links a i {
+              display: block;
+              font-size: 26px;
+              line-height: 60px;
+              width: 60px;
+              background-color: #fff;
+              text-align: center;
+              color: #000;
+              border-radius: 50%;
+              transition: all .5s ease; }
+              .portfolio .project .card .thumbnail .links a i:hover {
+                background-color: #000;
+                color: #fff;
+                cursor: pointer; }
+      .portfolio .project .card h4 {
+        color: #3C4858;
+        margin-top: 28px;
+        margin-bottom: 14px;
+        font-size: 18px;
+        font-family: "Roboto Slab", "Times New Roman", serif; }
 
 * {
   box-sizing: border-box; }
