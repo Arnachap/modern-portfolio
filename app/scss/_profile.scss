@@ -1,46 +1,55 @@
 .profile {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
 
-    .avatar img {
-        vertical-align: middle;
-        border-style: none;
-        max-width: 160px;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-        border-radius: 50%;
-        transform: translate3d(0, -50%, 0);
+  .avatar img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px -8px rgba(0, 0, 0, 0.24),
+      0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    transform: translate3d(0, -50%, 0);
+  }
+
+  .name {
+    margin-top: -80px;
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      color: $grey;
+      font-size: 24px;
+      height: 41px;
+      line-height: 41px;
+      width: 41px;
+      overflow: hidden;
+      position: relative;
+      margin: 0.3rem 1px;
+      font-weight: 400;
+
+      &:hover {
+        color: $primary-color;
+        @include ease;
+      }
     }
+  }
 
-    .name {
-        margin-top: -80px;
+  p {
+    text-align: justify !important;
+  }
+}
 
-        a {
-            display: inline-block;
-            vertical-align: middle;
-            color: $grey;
-            font-size: 24px;
-            height: 41px;
-            line-height: 41px;
-            width: 41px;
-            overflow: hidden;
-            position: relative;
-            margin: 0.3rem 1px;
-            font-weight: 400;
-
-            &:hover {
-                color: $primary-color;
-                @include ease;
-            }
-        }
-    }
-        
-    p {
-        text-align: justify !important;
-    }
+@include mediaMd {
+  .profile {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 30px;
+  }
 }

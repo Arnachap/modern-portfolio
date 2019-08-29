@@ -1,105 +1,126 @@
 .contact {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-    margin: auto;
-    padding-bottom: 30px;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+  margin: auto;
+  padding-bottom: 30px;
 
-    .form-info {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding: 26px 15px;
+  .form-info {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 26px 15px;
+  }
+
+  .form-message {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 26px 15px 0;
+  }
+
+  .group {
+    position: relative;
+
+    label {
+      font-size: 16px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 14px;
+      @include ease;
     }
 
-    .form-message {
-        flex: 0 0 100%;
-        max-width: 100%;
-        padding: 26px 15px 0;
+    input,
+    textarea {
+      color: $dark-grey;
+      font-size: 16px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $grey;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:focus ~ label,
+      &:valid ~ label {
+        top: -12px;
+        font-size: 14px;
+        color: $primary-color;
+      }
+
+      &:focus ~ .bar:before,
+      &:focus ~ .bar:after {
+        width: 50%;
+      }
     }
 
-    .group {
-        position: relative;
+    .bar {
+      position: relative;
+      display: block;
+      width: 100%;
 
-        label {
-            font-size: 16px;
-            font-weight: normal;
-            position: absolute;
-            pointer-events: none;
-            left: 5px;
-            top: 14px;
-            @include ease;
-        }
-
-        input,
-        textarea {
-            color: $dark-grey;
-            font-size: 16px;
-            padding: 10px 10px 10px 5px;
-            display: block;
-            width: 100%;
-            border: none;
-            border-bottom: 1px solid $grey;
-
-            &:focus {
-                outline: none;
-            }
-
-            &:focus ~ label,
-            &:valid ~ label {
-                top: -12px;
-                font-size: 14px;
-                color: $primary-color;
-            }
-
-            &:focus ~ .bar:before,
-            &:focus ~ .bar:after {
-                width: 50%;
-            }
-        }
-
-        .bar {
-            position: relative;
-            display: block;
-            width: 100%;
-
-            &:before,
-            &:after {
-                position:absolute;
-                z-index: 1;
-                content: '';
-                height: 2px;
-                width: 0;
-                bottom: -1px;
-                background: $primary-color;
-                @include ease
-            }
-
-            &:before {
-                left: 50%;
-            }
-
-            &:after {
-                right: 50%;
-            }
-        }
-    }
-
-    button {
-        display: block;
-        margin: 30px auto 0;
-        padding: 12px 30px;
-        text-transform: uppercase;
-        color: #fff;
-        text-decoration: none;
-        background-color: $primary-color;
-        border: 0;
-        border-radius: 4px;
-        outline: 0;
-        cursor: pointer;
-        box-shadow: 0 2px 2px 0 rgba(156, 39, 176, .14), 0 3px 1px -2px rgba(156, 39, 176, .2), 0 1px 5px 0 rgba(156, 39, 176, .12);
+      &:before,
+      &:after {
+        position: absolute;
+        z-index: 1;
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: -1px;
+        background: $primary-color;
         @include ease;
+      }
 
-        &:hover {
-            box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(0, 202, 227, .5);
-        }
+      &:before {
+        left: 50%;
+      }
+
+      &:after {
+        right: 50%;
+      }
     }
+  }
+
+  button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    background-color: $primary-color;
+    border: 0;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14),
+      0 3px 1px -2px rgba(156, 39, 176, 0.2),
+      0 1px 5px 0 rgba(156, 39, 176, 0.12);
+    @include ease;
+
+    &:hover {
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2),
+        0 13px 24px -11px rgba(0, 202, 227, 0.5);
+    }
+  }
+}
+
+@include mediaMd {
+  .contact {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: auto 30px;
+  }
+}
+
+@include mediaSm {
+  .contact {
+    .form-info {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 26px 15px;
+    }
+  }
 }

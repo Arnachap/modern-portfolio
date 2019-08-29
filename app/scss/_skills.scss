@@ -1,19 +1,27 @@
 .skills {
-    .skill {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+  .skill {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 
-        i {
-            color: $primary-color;
-            font-size: 3.8rem;
-        }
-
-        h4 {
-            color: $dark-grey;
-            margin-top: 28px;
-            margin-bottom: 14px;
-            font-size: 18px;
-            font-family: "Roboto Slab", "Times New Roman", serif;
-        }
+    i {
+      color: $primary-color;
+      font-size: 3.8rem;
     }
+
+    h4 {
+      color: $dark-grey;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      font-size: 18px;
+      font-family: 'Roboto Slab', 'Times New Roman', serif;
+    }
+  }
+}
+
+@include mediaMd {
+  .skills .skill {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
 }
