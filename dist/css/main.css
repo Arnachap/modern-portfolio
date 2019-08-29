@@ -13,8 +13,8 @@
     display: block;
     left: 0;
     top: 0;
-    content: "";
-    background: rgba(0, 0, 0, 0.3); }
+    content: '';
+    background: rgba(0, 0, 0, 0.1); }
 
 #main-raised {
   display: block;
@@ -396,9 +396,13 @@ body {
     display: block; }
   body .title {
     margin-top: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 8px;
     min-height: 32px;
     color: #3C4858;
     font-weight: 700;
     font-family: 'Roboto Slab', 'Times New Roman', serif;
     text-align: center; }
+  body .sub-title {
+    text-align: center;
+    font-size: 18px;
+    margin: 0 0 32px; }
