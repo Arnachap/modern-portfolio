@@ -20,14 +20,14 @@
                 max-width: 500px;
                 width: 100%;
                 background: $primary-color;
-                background: linear-gradient(90deg, #700877 0%, #ff2759 100%, #ff2759 100%);
-                box-shadow: 0 25px 20px -21px rgba(0,0,0,0.57);
+                background: linear-gradient(90deg, #0038e2 0%, #00cae3 100%, #00e21e 100%);
+                box-shadow: 0 25px 20px -21px rgba(0, 0, 0, 0.57);
                 border-radius: 8px 8px;
 
                 &:hover {
                     img {
                         filter: alpha(opacity=50);
-                        opacity: .5;
+                        opacity: .6;
                     }
 
                     .links a {
