@@ -379,7 +379,7 @@ body {
   color: #999;
   height: 100%;
   margin: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   line-height: 1.5;
   font-weight: 300; }
   body p {
@@ -400,5 +400,5 @@ body {
     min-height: 32px;
     color: #3C4858;
     font-weight: 700;
-    font-family: "Roboto Slab", "Times New Roman", serif;
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
     text-align: center; }
